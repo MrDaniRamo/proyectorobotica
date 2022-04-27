@@ -2,16 +2,38 @@
     box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;  
+}
+
+#top{
+    background-color: cyan;
+    height: 50%;
+    flex-grow: 1;
+}
+
+#bottom{
+    background-color: magenta;
+    height: 50%;
+    flex-grow: 1;
+}
+
 h1{
     font-size: 30px;
     text-align: center;
     padding: 50px;
     padding-bottom: 25px;
 }
+
 form{
     text-align: center;
     padding: 25px;
 }
+
 ul{
     list-style: none;
     max-width: 50%;
