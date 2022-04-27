@@ -6,21 +6,69 @@
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     height: 100vh;  
+    justify-content: center;
+    align-items: center;
 }
 
 #top{
     background-color: cyan;
-    height: 50%;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #bottom{
     background-color: magenta;
-    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    max-height: 50vh;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
     flex-grow: 1;
 }
+#btn_1{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#btn_1{
+    flex-grow: 1;
+    flex: 1;
+    max-width: 100%;
+}
+
+.lis{
+    flex: 1;
+    width: 85vh;
+    height: 50vh;  
+    min-width: 50%;
+    min-height: 25vh;
+    border: .25rem rgb(0, 0, 0) solid ;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 h1{
     font-size: 30px;
@@ -34,11 +82,6 @@ form{
     padding: 25px;
 }
 
-ul{
-    list-style: none;
-    max-width: 50%;
-    margin: 0px auto;
-}
 button{
     border-style: outset;
     padding: 3px 5px;
@@ -47,11 +90,9 @@ button{
     border-radius: 5px;
     padding: 5px 10px;
 }
-.lis{
-    border: 1px rgb(156, 156, 156) solid ;
-    margin: 10px 0px;
-    padding: 15px;
-}
+
+
+
 .checar{
     background-color:green;
     padding: 7px 12px;
