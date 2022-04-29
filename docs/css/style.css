@@ -16,13 +16,35 @@ html,body {
 
 #top{
    /* background-color: cyan; */
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 100%;
     height: 50%;
-    justify-content: center;
-    align-items: center;
 }
+
+#q_img{
+    width: 100%;
+    height: 70%;
+}
+
+#q_txt{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.QIMG{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fguardianlv.com%2Fwp-content%2Fuploads%2F2013%2F12%2FDungeons-Dragons-Next-Edition-Out-Summer-2014.jpg&f=1&nofb=1");
+}
+
 
 #bottom{
    /* background-color: magenta;*/
