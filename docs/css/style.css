@@ -35,7 +35,18 @@ html,body {
     align-content: center;
 }
 
-.QIMG{
+.QIMG_vis{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fguardianlv.com%2Fwp-content%2Fuploads%2F2013%2F12%2FDungeons-Dragons-Next-Edition-Out-Summer-2014.jpg&f=1&nofb=1");
+}
+
+.QIMG_invis{
+    display: none;
     max-width: 100%;
     max-height: 100%;
     margin-top: 5px;
